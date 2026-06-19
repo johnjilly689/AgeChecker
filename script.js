@@ -4,9 +4,8 @@ const result = document.getElementById("result");
 
 checkAgeButton.addEventListener("click", async () => {
   const age = ageInput.value;
-
   try {
-    const response = await axios.post("http://localhost:3000", { age });
+    const response = await axios.post("https://agechecker-4m1l.onrender.com/check-age", { age });
     result.innerText = response.data.message;
   } catch (error) {
     console.error("Error:", error);
