@@ -34,11 +34,15 @@ A responsive full-stack age checker app built with HTML, CSS, JavaScript, Axios,
 ## 🚀 Getting Started
 
 ### Installation
+
 git clone https://github.com/johnjilly689/AgeChecker.git
+
 cd age-checker-app
+
 npm install
 
 ### Run The App
+
 node server.js
 
 Then open index.html in your browser.
@@ -47,6 +51,7 @@ Then open index.html in your browser.
 
 ## 📬 Contact Me
 ** John JIlly **
+
 https://github.com/johnjilly689 
 
 (mail to: johnjilly986@gmail.com)
