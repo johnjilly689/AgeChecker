@@ -34,7 +34,7 @@ A responsive full-stack age checker app built with HTML, CSS, JavaScript, Axios,
 ## 🚀 Getting Started
 
 ### Installation
-git clone https://github.com/johnjilly689/age-checker-app
+git clone https://github.com/johnjilly689/AgeChecker.git
 cd age-checker-app
 npm install
 
