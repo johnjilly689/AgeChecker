@@ -1,17 +1,25 @@
 import express from "express";
 import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(cors());
-
 app.use(express.json());
-app.post('/', (req,res) => {
-  const age = Number(req.body.age);
 
+// Add this — serves your index.html on homepage
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.post('/check-age', (req,res) => {
+  const age = Number(req.body.age);
   if (Number.isNaN(age)) {
     return res.status(400).json({message: "Please enter a valid age."});
   }
-
   if (age >= 18) {
     res.json({message: "You are an adult."});
   } else {
